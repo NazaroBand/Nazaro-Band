@@ -1,0 +1,6 @@
+{
+  "name": "Nazaro Band",
+  "description": "Premium web stranica za glazbeni sastav Nazaro Band. Glazba za svadbe, proslave i sve svečane prigode.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

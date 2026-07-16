@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", "Poppins", sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --color-gold: #D4AF37;
+  --color-gold-dark: #AA820A;
+  --color-gold-light: #F3E5AB;
+  --color-gold-cream: #FFF8DC;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFF8DC;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+  background-color: #080808;
+  color: #ffffff;
+}
+
+/* Custom utilities for glassmorphism and subtle luxury effects */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.glass-panel-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.15);
+  transform: translateY(-4px);
+}
+
+.stroke-text {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.95);
+}
+@media (max-width: 768px) {
+  .stroke-text {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.95);
+  }
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF8DC 0%, #D4AF37 50%, #AA820A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-glow {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+}
+
+.gold-border-glow:hover {
+  border-color: #D4AF37;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+/* Hide default video controls for backdrops */
+video::-webkit-media-controls {
+  display: none !important;
+}
