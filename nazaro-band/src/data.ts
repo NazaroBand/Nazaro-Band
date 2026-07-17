@@ -18,7 +18,7 @@ import g7 from './assets/images/regenerated_image_1784138123964.jpg';
 import g8 from './assets/images/regenerated_image_1784138124727.jpg';
 
 export const STATS_DATA: StatItem[] = [
-  { id: '1', value: 150, suffix: '+', label: 'odrađenih nastupa' },
+  { id: '1', value: 890, suffix: '+', label: 'odrađenih nastupa' },
   { id: '2', value: 100, suffix: '%', label: 'zadovoljnih mladenaca' },
   { id: '3', value: 10, suffix: '+', label: 'godina iskustva' }
 ];
